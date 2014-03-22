@@ -47,4 +47,5 @@ end
 group :test, :development do
   gem 'rspec-rails', '~> 2.14.1'
   gem 'guard-rspec', '~> 4.2.8'
+  gem 'terminal-notifier-guard', '~> 1.5.3'
 end
