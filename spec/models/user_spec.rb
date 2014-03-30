@@ -16,5 +16,12 @@ describe User do
       user.valid?
       expect(user.errors[:password_confirmation]).to include("can't be blank")
     end
+
+    it 'ensures unique email addresses' do
+      user1 = create(:user)
+      user.email = user1.email
+      user.valid?
+      expect(user.errors[:email]).to include("has already been taken")
+    end
   end
 end

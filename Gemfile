@@ -46,7 +46,8 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'debugger', group: [:development, :test]
 
 group :test, :development do
-  gem 'rspec-rails', '~> 2.14.1'
+  gem 'factory_girl_rails', '~> 4.4.1'
   gem 'guard-rspec', '~> 4.2.8'
+  gem 'rspec-rails', '~> 2.14.1'
   gem 'terminal-notifier-guard', '~> 1.5.3'
 end
